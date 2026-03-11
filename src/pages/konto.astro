@@ -1,20 +1,9 @@
 ---
-import '../styles/global.css';
+import Layout from '../layouts/Layout.astro';
 ---
 
-<!doctype html>
-<html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Anmelden bei Vertoo ERP" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <title>Anmelden – Vertoo ERP</title>
-  </head>
-  <body class="bg-gray-50 font-sans antialiased min-h-screen flex items-center justify-center px-4">
+<Layout title="Anmelden – Vertoo ERP" description="Melden Sie sich bei Vertoo ERP an">
+  <div class="min-h-screen bg-gray-50 flex items-center justify-center px-4">
     <div class="w-full max-w-sm">
       <!-- Logo -->
       <div class="text-center mb-8">
@@ -76,14 +65,14 @@ import '../styles/global.css';
       <!-- Footer -->
       <div class="mt-6 text-center">
         <p class="text-xs text-gray-400">
-          Noch kein Konto? <a href="https://vertoo.de/#kontakt" class="text-brand-700 hover:underline font-medium">Kostenlos testen</a>
+          Noch kein Konto? <a href="/#kontakt" class="text-brand-700 hover:underline font-medium">Kostenlos testen</a>
         </p>
         <p class="mt-4 text-xs text-gray-300">
-          <a href="https://vertoo.de/impressum" class="hover:text-gray-500 transition-colors">Impressum</a>
+          <a href="/impressum" class="hover:text-gray-500 transition-colors">Impressum</a>
           {' · '}
-          <a href="https://vertoo.de/datenschutz" class="hover:text-gray-500 transition-colors">Datenschutz</a>
+          <a href="/datenschutz" class="hover:text-gray-500 transition-colors">Datenschutz</a>
         </p>
       </div>
     </div>
-  </body>
-</html>
+  </div>
+</Layout>
