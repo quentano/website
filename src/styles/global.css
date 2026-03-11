@@ -75,3 +75,35 @@ body {
   transform: translateY(-4px);
   box-shadow: 0 12px 40px -8px rgba(4, 120, 87, 0.15);
 }
+
+.legal-content {
+  color: #374151;
+  line-height: 1.75;
+}
+.legal-content p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.legal-content h1 {
+  margin-bottom: 1.5rem;
+}
+.legal-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+.legal-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.legal-content a {
+  color: var(--color-brand-700);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.legal-content a:hover {
+  color: var(--color-brand-800);
+}
+.legal-content strong {
+  color: #111827;
+  font-weight: 600;
+}
