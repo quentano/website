@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-50: #f3f0ff;
-  --color-brand-100: #e8e0ff;
-  --color-brand-200: #d4c5ff;
-  --color-brand-300: #b49aff;
-  --color-brand-400: #9061ff;
-  --color-brand-500: #7c3aff;
-  --color-brand-600: #6d1df5;
-  --color-brand-700: #290171;
-  --color-brand-800: #1f0157;
-  --color-brand-900: #16013d;
-  --color-brand-950: #0b001f;
+  --color-brand-50: #ecfdf5;
+  --color-brand-100: #d1fae5;
+  --color-brand-200: #a7f3d0;
+  --color-brand-300: #6ee7b7;
+  --color-brand-400: #34d399;
+  --color-brand-500: #10b981;
+  --color-brand-600: #059669;
+  --color-brand-700: #047857;
+  --color-brand-800: #065f46;
+  --color-brand-900: #064e3b;
+  --color-brand-950: #022c22;
 
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
@@ -58,14 +58,14 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #290171 0%, #7c3aff 50%, #9061ff 100%);
+  background: linear-gradient(135deg, #047857 0%, #10b981 50%, #34d399 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .hero-gradient {
-  background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(41, 1, 113, 0.15), transparent);
+  background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(4, 120, 87, 0.12), transparent);
 }
 
 .card-hover {
@@ -73,5 +73,5 @@ body {
 }
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px -8px rgba(41, 1, 113, 0.15);
+  box-shadow: 0 12px 40px -8px rgba(4, 120, 87, 0.15);
 }
