@@ -1,0 +1,46 @@
+---
+const cases = [
+  {
+    title: 'E-Commerce & Handel',
+    description: 'Warenwirtschaft, Paketierung, Preischeck und Dropshipping – alles für den Online- und Offline-Handel.',
+    icon: '🛍',
+  },
+  {
+    title: 'Dienstleister & Agenturen',
+    description: 'Zeiterfassung, Projektmanagement, Buchhaltung und Teamkommunikation für serviceorientierte Unternehmen.',
+    icon: '💼',
+  },
+  {
+    title: 'Produktion & Logistik',
+    description: 'Bestandsführung, Wareneingang, Versand-Tracking und Qualitätsprüfung für produzierende Betriebe.',
+    icon: '🏭',
+  },
+  {
+    title: 'Handwerk & Bau',
+    description: 'Betriebsmittel-Verwaltung, Fuhrpark, Kostenübersicht und mobile Zeiterfassung für Teams vor Ort.',
+    icon: '🔧',
+  },
+];
+---
+
+<section id="branchen" class="py-24 lg:py-32 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-sm font-medium text-brand-600 uppercase tracking-wider">Branchen</span>
+      <h2 class="mt-3 text-3xl sm:text-4xl font-bold">Für jede Branche die richtige Lösung</h2>
+      <p class="mt-4 text-lg text-gray-500">
+        Vertoo passt sich Ihrem Geschäft an – nicht umgekehrt.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      {cases.map((c) => (
+        <div class="p-8 rounded-2xl bg-white border border-gray-100 card-hover">
+          <span class="text-4xl">{c.icon}</span>
+          <h3 class="mt-4 text-xl font-semibold text-gray-900">{c.title}</h3>
+          <p class="mt-2 text-gray-500 leading-relaxed">{c.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

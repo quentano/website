@@ -1,0 +1,58 @@
+---
+const features = [
+  {
+    title: 'Hosting in Deutschland',
+    description: 'Ihre Daten liegen auf deutschen Servern – DSGVO-konform und sicher.',
+    icon: '🇩🇪',
+  },
+  {
+    title: 'Session-basierte Auth',
+    description: 'Sichere httpOnly Cookies statt Tokens. Kein localStorage-Risiko.',
+    icon: '🔒',
+  },
+  {
+    title: 'SSO mit Keycloak',
+    description: 'Enterprise Single Sign-On für nahtlose Integration in Ihre IT-Landschaft.',
+    icon: '🔑',
+  },
+  {
+    title: 'PWA-fähig',
+    description: 'Installierbar auf jedem Gerät. Kein App Store, kein Update-Zwang.',
+    icon: '📱',
+  },
+  {
+    title: 'Multi-Tenant',
+    description: 'Jeder Kunde bekommt eine eigene, isolierte Instanz mit eigenem Branding.',
+    icon: '🏢',
+  },
+  {
+    title: 'GoBD-konform',
+    description: 'Unveränderbare Audit-Trails für Rechnungen und Finanzdaten.',
+    icon: '📋',
+  },
+];
+---
+
+<section class="py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-sm font-medium text-brand-600 uppercase tracking-wider">Technologie & Sicherheit</span>
+      <h2 class="mt-3 text-3xl sm:text-4xl font-bold">Gebaut für Vertrauen</h2>
+      <p class="mt-4 text-lg text-gray-500">
+        Moderne Architektur, höchste Sicherheitsstandards und volle DSGVO-Konformität.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {features.map((f) => (
+        <div class="flex items-start gap-4 p-6 rounded-2xl border border-gray-100 bg-white">
+          <span class="text-2xl shrink-0">{f.icon}</span>
+          <div>
+            <h3 class="font-semibold text-gray-900">{f.title}</h3>
+            <p class="mt-1 text-sm text-gray-500">{f.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

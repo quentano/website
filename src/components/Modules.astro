@@ -1,0 +1,100 @@
+---
+const modules = [
+  {
+    icon: '⏱',
+    title: 'Zeiterfassung',
+    description: 'Stempeluhr, Überstundenkonto, Abwesenheiten und Team-Übersicht – mobil und am Desktop.',
+    color: 'bg-blue-50 text-blue-600',
+  },
+  {
+    icon: '📦',
+    title: 'Warenwirtschaft',
+    description: 'Produkte, Bestellungen, Lieferanten, Aufträge, Versand und Retouren in einem Workflow.',
+    color: 'bg-amber-50 text-amber-600',
+  },
+  {
+    icon: '🧾',
+    title: 'Buchhaltung',
+    description: 'Rechnungen, Angebote, Ausschreibungen, Kunden und USt-Voranmeldung mit GoBD-Audit.',
+    color: 'bg-green-50 text-green-600',
+  },
+  {
+    icon: '✅',
+    title: 'Aufgaben & Projekte',
+    description: 'Kanban-Board, Prioritäten, Kommentare, Zuweisungen und Projektmanagement.',
+    color: 'bg-purple-50 text-purple-600',
+  },
+  {
+    icon: '💬',
+    title: 'Nachrichten',
+    description: 'Direktnachrichten, Gruppenchats und Kanäle mit Reaktionen, Antworten und Dateien.',
+    color: 'bg-pink-50 text-pink-600',
+  },
+  {
+    icon: '📚',
+    title: 'Wissensdatenbank',
+    description: 'Interne Knowledge Base mit Markdown, Kategorien und Veröffentlichungs-Workflow.',
+    color: 'bg-indigo-50 text-indigo-600',
+  },
+  {
+    icon: '🏷',
+    title: 'Paketizer',
+    description: 'Automatische Paketzusammenstellung nach UVP, Gewicht und Diversifikation.',
+    color: 'bg-orange-50 text-orange-600',
+  },
+  {
+    icon: '💰',
+    title: 'Kostenmanagement',
+    description: 'Fixkosten, Gehälter, Fuhrpark, Software-Abos und sonstige Kosten im Überblick.',
+    color: 'bg-emerald-50 text-emerald-600',
+  },
+  {
+    icon: '🛒',
+    title: 'E-Commerce',
+    description: 'Preischeck via EAN über idealo, Amazon & Co. mit Ampel-Logik und Bulk-Import.',
+    color: 'bg-cyan-50 text-cyan-600',
+  },
+  {
+    icon: '📋',
+    title: 'Betriebsmittel',
+    description: 'Anforderungen, Bürobedarf und IT-Inventar mit Bestandsverwaltung und Genehmigungen.',
+    color: 'bg-teal-50 text-teal-600',
+  },
+  {
+    icon: '🚚',
+    title: 'Dropshipping',
+    description: 'Lieferanten-Management, CSV-Import via FTP und Shopware 6 Integration.',
+    color: 'bg-rose-50 text-rose-600',
+  },
+  {
+    icon: '📄',
+    title: 'Dokumente & DSGVO',
+    description: 'Mitarbeiter-Dokumente, Lohnzettel und vollständige DSGVO-Datenauskunft.',
+    color: 'bg-gray-50 text-gray-600',
+  },
+];
+---
+
+<section id="module" class="py-24 lg:py-32">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <span class="text-sm font-medium text-brand-600 uppercase tracking-wider">Module</span>
+      <h2 class="mt-3 text-3xl sm:text-4xl font-bold">Alles, was Ihr Unternehmen braucht</h2>
+      <p class="mt-4 text-lg text-gray-500">
+        Wählen Sie nur die Module, die Sie benötigen. Jedes Modul ist eigenständig nutzbar und nahtlos integriert.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      {modules.map((mod) => (
+        <div class="group relative p-6 rounded-2xl border border-gray-100 bg-white card-hover">
+          <div class={`w-12 h-12 rounded-xl ${mod.color} flex items-center justify-center text-2xl mb-4`}>
+            {mod.icon}
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">{mod.title}</h3>
+          <p class="text-sm text-gray-500 leading-relaxed">{mod.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
